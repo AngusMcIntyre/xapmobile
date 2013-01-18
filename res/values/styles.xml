@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="ThemePrimayer" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@color/Color_PrimayerBlue</item>
+        <item name="android:actionBarStyle">@style/ActionBarPrimayer</item>
+    </style>
+    <style name="ThemeXiLogPlus" parent="@android:Theme.Holo.Light"></style>
+	
+	<style name="ActionBarPrimayer" parent="@android:style/Widget.Holo.ActionBar">
+	    <item name="android:background">@color/Color_PrimayerBlue</item>
+	</style>
+    <color name="Color_PrimayerBlue">#002B79</color>    
+</resources>

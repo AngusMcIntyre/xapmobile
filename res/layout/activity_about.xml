@@ -1,0 +1,106 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" android:scrollbarStyle="insideOverlay" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dip" />
+            <TextView
+                android:id="@+id/textView_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:onClick="urlClicked"
+                android:text="@string/uk_contact_details"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="Tel. +44 (0)239 225 2228"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="Fax. +44 (0)23 9225 2235"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/uk_viewonmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:onClick="onViewOnMapClicked"
+                android:text="@string/view_on_map" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:onClick="urlClicked"
+                android:text="@string/france_contact_details"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dip" />
+<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="Tel. +33 (0)4 72 19 10 62"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:autoLink="phone"
+    android:text="Fax. +33 (0)4 72 17 70 54"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/france_viewonmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:onClick="onViewOnMapClicked"
+                android:text="@string/view_on_map" />
+
+            <Button
+                android:id="@+id/malaysia_viewonmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:onClick="onViewOnMapClicked"
+                android:text="@string/view_on_map" />
+        </LinearLayout>
+
+    </ScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/padding_large"
+        android:layout_row="1"
+        android:src="@drawable/primayer_logo_white" />
+
+</LinearLayout>
