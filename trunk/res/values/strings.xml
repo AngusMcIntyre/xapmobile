@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XAP Mobile</string>
+    <string name="current_values_header">Current Values</string>
+    <string name="enter_a_command">Enter a command</string>
+    <string name="analogue_format">Analogue %s</string>
+    <string name="digital_format">Digital %s</string>
+    <string name="battery_voltage">Battery Voltage</string>
+    <string name="externalpower_voltage">External Power Voltage</string>
+    <string name="gsm_signalstrange">GSM Signal Strength</string>
+    <string name="menuItem_Autozero">Autozero</string>
+    <string name="logger_connected">Logger connected</string>
+    <string name="logger_disconnected">Logger disconnected</string>
+    <string name="primayer_about">About</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="uk_contact_details">UK Office</string>
+    <string name="contact_UK">UK</string>
+    <string name="view_on_map">View on map</string>
+    <string name="version">Version</string>
+    <string name="france_contact_details">French Office</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="primayer.android.delta"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <application
+        android:icon="@drawable/pluslogo_hl"
+        android:label="@string/app_name"
+        android:logo="@drawable/pluslogo" android:theme="@style/ThemeXiLogPlus">
+
+        <!--
+        <activity android:launchMode="singleTop"
+            android:name=".DeltaDeviceCaptureActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">           
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+                     
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" 
+                    android:resource="@xml/device_filter"/>
+        </activity>
+        -->
+
+        <activity
+            android:name=".DeltaCurrentValuesActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <receiver android:name=".UsbDeviceReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" 
+                    android:resource="@xml/device_filter"/>
+        -->
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" android:theme="@style/ThemePrimayer" android:logo="@drawable/primayer_flag_white">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="primayer.android.delta.DeltaCurrentValuesActivity" />
+        </activity>
+    </application>
+
+</manifest>
