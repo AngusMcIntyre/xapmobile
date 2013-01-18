@@ -17,7 +17,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="30dip" />
+                android:textSize="30sp" />
             <TextView
                 android:id="@+id/textView_version"
                 android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
                 android:onClick="urlClicked"
                 android:text="@string/uk_contact_details"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="30dip" />
+                android:textSize="30sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:onClick="urlClicked"
                 android:text="@string/france_contact_details"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="30dip" />
+                android:textSize="30sp" />
 <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,10 +97,8 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
         android:layout_gravity="bottom|right"
         android:layout_margin="@dimen/padding_large"
-        android:layout_row="1"
         android:src="@drawable/primayer_logo_white" />
 
 </LinearLayout>
