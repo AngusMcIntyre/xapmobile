@@ -1,0 +1,1 @@
+Mobile client for interfacing with Primayer Xilog+ and Primyer Primelog+ devices
